@@ -1,8 +1,6 @@
 "use client"
 import { deleteToDo } from "@/app/actions"
 
-import prisma from "@/db"
-
 function buttonClick(id: string) {
     deleteToDo(id)
     window.location.reload()
